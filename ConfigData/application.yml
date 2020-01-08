@@ -1,28 +1,16 @@
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8011/eureka/,http://eureka-secondary:8012/eureka/,http://eureka-tertiary:8013/eureka/
+      defaultZone: http://localhost:8881/eureka/,http://eureka-secondary:8882/eureka/
 ---
 spring:
-  profiles: subject
-words: Yo,Tu,El,Ella,Esto
+  profiles: ms-invoicing
 
 ---
 spring:
-  profiles: verb
-words: corrió, sabía, tenía, vió, compró
+  profiles: ms-saleorder
 
 ---
 spring:
-  profiles: article
-words: un,una,la
+  profiles: ms-shipping
 
----
-spring:
-  profiles: adjective
-words: razonable, permeable, sospechoso, ordinario, improbable
-
----
-spring:
-  profiles: noun
-words: barco, libro, voto, asiento, mochila, partición
