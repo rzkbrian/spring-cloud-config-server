@@ -4,13 +4,16 @@ eureka:
       defaultZone: http://localhost:8881/eureka/,http://eureka-secondary:8882/eureka/
 ---
 spring:
-  profiles: invoicing
+  application:
+    name: ms-saleorder
 
 ---
 spring:
-  profiles: order
+  application:
+    name: ms-shipping
 
 ---
 spring:
-  profiles: shipping
+  application:
+    name: ms-invoicing
 
